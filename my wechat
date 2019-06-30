@@ -1,124 +1,198 @@
 .markdown-here-wrapper {
-  font-size: 16px;
-  line-height: 1.8em;
-  letter-spacing: 0.1em;
-}
-pre, blockquote, q, ul, ol {
-  margin: 10px 5px;
-}
-h1, h2, h3, h4, h5, h6 {
-  margin: 20px 0 10px;
-  padding: 0;
-  font-style: bold !important;
-  color: #6f5a40!important;
-  text-align: center !important;
-  margin: 1.5em 5px !important;
-  padding: 0.5em 1em !important;
-}
-h1 {
-  font-size: 24px !important;
-  text-align: left !important;
-  margin: 1.5em -10px !important;
-  border-bottom: 1px solid #ddd !important;
-}
-h2 {
-  font-size: 22px !important;
-  text-align: left !important;
-  margin: 1.5em -8px !important;
-}
-h3 {
-  font-size: 20px  !important;
-  text-align: left !important;
-  margin: 1.5em -5px !important;
-}
-h4 {
-  font-size: 18px;
-  text-align: left !important;
- margin: 1.5em -5px !important;
-}
-h5 {
-  font-size: 17px;
-  text-align: left !important;
- margin: 1.5em -5px !important;
-}
-p {
-  margin: 1.5em 5px !important;
-}
-strong, b{
-  padding: 2px 4px;
-  color: #c7254e;
-  background-color: #f9f2f4;
-  border-radius: 4px;
-  font-size: 90%;
-  font-weight:500;
-} 
-em, i {
-  color: #009688;
-}
-hr {
-  border: 1px solid #BF360C;
-  margin: 1.5em auto;
-}
-blockquote, q {
-  border-left: 5px solid #aa6708;
-  border-right: 1px solid #eee;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  padding: 0 10px;
-  color: #777;
-  quotes: none;
-  font-size:15px;
-  border-radius: 3px;
-}
-blockquote strong, b{
-  color: #aa6708;
-  font-size:17px;
-  background:none !important;
-}
-blockquote::before, blockquote::after, q::before, q::after {
-  content: none;
-}
-ul, ol {
-  padding-left: 15px;
-}
-li {
-  margin: 10px;
-}
-li p {
-  margin: 10px 0 !important;
-}
-ul ul, ul ol, ol ul, ol ol {
-  margin: 0;
-  padding-left: 10px;
-}
-ul {
-  list-style-type: circle;
-}
-pre, code {
-  font-size: 14px;
-  font-family: Roboto, 'Courier New', Consolas, Inconsolata, Courier, monospace;
-  margin: auto 4px;
-}
-code {
-    padding: 2px 4px !important;
-    font-size: 90% !important;
-    color: #c7254e !important;
-    background-color: #f9f2f4 !important;
-}
-pre {
+  font-family: Avenir;
   font-size: 15px;
-  line-height: 1.4em;
-  display: block; !important;
- padding: 2px 4px !important;
-    font-size: 90% !important;
-    color: #c7254e !important;
-    background-color: #f9f2f4 !important;
+  color: #646464;
+  line-height: 1.8em;
+  margin: 0.5em 1em;
+  text-align: justify;
+  letter-spacing: 1px;
 }
+
+
+p {
+  margin: 0 0 1.2em 0 !important;
+  padding-left: 1em;
+}
+
+
+blockquote, q {
+  margin: 0px 0px 0px 1.2em;
+  border-left: 4px solid #26c6da;
+  padding: 0.5em 0em;
+  color: #646464;
+  quotes: none;
+  line-height: 1.8em;
+}
+
+strong {
+  color: #fafafa;
+  background-image: linear-gradient(160deg, #48c897 20%,#27c6d8 80%);
+  font-weight: normal;
+  padding: 0.1em 0.3em;
+}
+
+
+hr {
+  border: 1px dashed #c13535;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.3em 0 1em;
+  padding: 0;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.6em;
+  border-bottom: 1px solid #ddd;
+}
+
+h2 {
+  font-size: 24px;
+  padding: 0em 0em 0.5em 0em;
+  border-bottom: 3px solid #299480;
+  color: #299480;
+}
+
+h3 {
+  font-size: 18px;
+  color: #3e3e3e;
+  padding-left: 1em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+
+pre, code {
+  font-size: 0.85em;
+  font-family: Consolas, Inconsolata, Courier, monospace;
+}
+
+code {
+  margin: 0 0.15em;
+  padding: 0 0.3em;
+  white-space: pre-wrap;
+  border: 1px solid #EAEAEA;
+  background-color: #F8F8F8;
+  border-radius: 3px;
+  display: inline;
+}
+
+pre {
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
 pre code {
   white-space: pre;
   overflow: auto;
   border-radius: 3px;
-  padding: 1px 1px;
+  border: 1px solid #CCC;
+  padding: 0.5em 0.7em;
   display: block !important;
-  background-color: #f9f2f4 !important;
+}
+
+.markdown-here-wrapper[data-md-url*="wordpress."] code span {
+  font: inherit;
+}
+
+.markdown-here-wrapper[data-md-url*="wordpress."] pre {
+  background-color: transparent;
+}
+
+
+table, pre, dl, ul, ol {
+  margin: 1.2em 0;
+}
+
+ul, ol {
+  padding-left: 2em;
+}
+
+li {
+  margin: 0.5em 0;
+}
+
+li p {
+  margin: 0.5em 0 !important;
+}
+
+ul ul, ul ol, ol ul, ol ol {
+  margin: 0;
+  padding-left: 1em;
+}
+
+ol ol, ul ol {
+  list-style-type: lower-roman;
+}
+
+ul ul ol, ul ol ol, ol ul ol, ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 1em;
+  font-weight: bold;
+  font-style: italic;
+}
+
+dl dd {
+  margin: 0 0 1em;
+  padding: 0 1em;
+}
+
+
+table {
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 1em;
+  font: inherit;
+  border: 0;
+}
+
+tbody {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+table tr {
+  border: 0;
+  border-top: 1px solid #CCC;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+table tr:nth-child(2n) {
+  background-color: #F8F8F8;
+}
+
+table tr th, table tr td {
+  font-size: 1em;
+  border: 1px solid #CCC;
+  margin: 0;
+  padding: 0.5em 1em;
+}
+
+table tr th {
+ font-weight: bold;
+  background-color: #F0F0F0;
 }
